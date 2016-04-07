@@ -1,2 +1,6 @@
 # chrome-extension-for-youtube
-This chrome extension lets you play Youtube video on Google search page which otherwise redirects you to Youtube website.
+A Chrome extension to replace Youtube video link with embedded Youtube video that runs on the same page instead of redirecting you to Youtube website.
+
+Search does not work properly when user search for some video second time without reloading web page. Here I have handled this through DOMNodeInserted eventlister which apparently not an ideal solution.
+
+//TODO - find a suitable event listener  

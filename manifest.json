@@ -1,0 +1,18 @@
+{
+"manifest_version": 2,
+    "name": "Youtube video in Google search",
+    "description": "This chrome extension lets you play Youtube video on Google search page which otherwise redirects you to Youtube website.",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
